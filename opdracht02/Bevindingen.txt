@@ -1,0 +1,6 @@
+DUS
+Voor zover ik het momenteel begrijp (jorn) Moeten we een vagrant script ( een manier om meerdere vm's snel op te zetten) schrijven,
+dat dan een webserver op elk van die vm's runt (voor stap 1 anyway). Daarna zijn er de volgende stappen met de volgende taken, die ik hierin hopelijk verder nog 
+ietwat zal uitleggen wanneer ik er aan kom. Momenteel lijkt het mij de bedoeling dat we met vagrant een groep vm's aanmaken in virtualbox, en deze dan
+al het hierboven uitgelegde hebben. hiervoor zijn er een aantal vagrant-scripts, en een aantal bash-scripts. die bash scripts zijn nodig voor de webserver, en vagrant voor het opzettten
+en configureren van de vm zelf (het virtualbox gedeelte, het linux gedeelte gebeurt in het bash script)

@@ -1,0 +1,16 @@
+docker pull httpd
+docker pull mariadb
+
+docker pull romeoz/docker-apache-php
+
+docker run --name app -d -p 8080:80 romeoz/docker-apache-php
+
+docker run --name app -d -p 8080:80 -v /host/to/path/app:/var/www/app/ romeoz/docker-apache-php
+
+docker run -p 80:80 -dit --name httpd -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+
+docker run --name mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb
+
+docker network create lampnetwork
+docker run --network lampnetwork --name drupal -p 8080:80 -d drupal
+docker run -d --name mysql --network lampnetwork -e MYSQL_DATABASE=drupal -e MYSQL_USER=user -e MYSQL_PASSWORD=password -e MYSQL_ROOT_PASSWORD=password mysql:5.7

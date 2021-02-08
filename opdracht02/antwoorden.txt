@@ -1,0 +1,2 @@
+load tests: uitgeschreven rapport van cockpit met screenshots etc
+CENTOS 7 gebruiken
